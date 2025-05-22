@@ -2604,9 +2604,13 @@ body {
     border-radius: 32px 32px 0px 0px;
   }
 
+  .forms2 .forms__container {
+    padding: 0px 0px 0px 0px;
+  }
+
   .forms2 .forms__left {
     max-width: 100%;
-    padding: 50px 0px 20px 0px;
+    padding: 50px 16px 20px 16px;
     border-radius: 32px 32px 0px 0px;
   }
 

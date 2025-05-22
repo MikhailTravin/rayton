@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250522194703">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250522195920">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -176,7 +176,7 @@
 											<img src="img/icons/logo2.svg" alt="">
 										</div>
 										<div class="right-home__close">
-											<img src="img/icons/close.svg" alt="">
+											<img src="img/icons/close1.svg" alt="">
 										</div>
 									</div>
 									<div class="right-home__title">
@@ -1067,7 +1067,11 @@
 						</form>
 					</div>
 				</div>
-				<picture><source srcset="img/bg4.webp" type="image/webp"><img loading="lazy" src="img/bg4.png" alt="" class="footer__bg"></picture>
+				<picture>
+					<source media="(max-width: 767.98px)" srcset="img/bg4-mob.png" type="image/png">
+					<source srcsetimg="bg4.webp" type="image/webp">
+					<img class="footer__bg" src="img/bg4.png" alt="">
+				</picture>
 			</div>
 		</main>
 		<footer class="footer">
@@ -1130,7 +1134,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250522194703"></script>
+	<script src="js/app.min.js?_v=20250522195920"></script>
 </body>
 
 </html>
