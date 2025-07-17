@@ -1,0 +1,215 @@
+.footer {
+    position: relative;
+    z-index: 20;
+    background-color: $mainColor;
+    // .footer__bg
+
+    &__bg {
+        height: auto;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__content
+
+    &__content {
+        padding: 75px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @media (max-width: $mobile) {
+            gap: 32px;
+            flex-direction: column-reverse;
+            padding: 0px 0px 24px 0px;
+        }
+    }
+
+    // .footer__top
+
+    &__top {
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+    }
+}
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: $mobile) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        max-width: 282px;
+        margin: 0 auto;
+    }
+    // .top-footer__menu
+
+    &__menu {
+        ul {
+            @media (max-width: $mobile) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            li {
+                @media (max-width: $mobile) {
+                    flex: 0 1 auto;
+                }
+                a {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 200%;
+                    letter-spacing: -0.03em;
+                    color: rgba(255, 255, 255, 0.75);
+                    transition: color 0.3s;
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.3);
+                    }
+                    @media (max-width: $mobile) {
+                        font-size: 12px;
+                        border: 1px solid rgba(255, 255, 255, 0.6);
+                        padding: 5px 10px;
+                        border-radius: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+.contacts-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: $mobile) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: $mobile) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+    // .contacts-footer__buttons
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: $mobile) {
+            gap: 15px;
+            width: 100%;
+            a {
+                width: 100%;
+            }
+        }
+    }
+
+    // .contacts-footer__button
+
+    &__button {
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    // .contacts-footer__email
+
+    &__email {
+    }
+
+    // .contacts-footer__phone
+
+    &__phone {
+    }
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    @media (max-width: $mobile) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    // .bottom-footer__logo
+
+    &__logo {
+        flex: 0 0 300px;
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+        }
+        img {
+            height: 103px;
+            width: auto;
+            @media (max-width: $mobile) {
+                height: 86px;
+            }
+        }
+    }
+
+    // .bottom-footer__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 200%;
+        letter-spacing: -0.03em;
+        color: rgba(255, 255, 255, 0.75);
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    // .bottom-footer__address
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 0 0 300px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 200%;
+        letter-spacing: -0.03em;
+        color: rgba(255, 255, 255, 0.75);
+        @media (max-width: $mobile) {
+            font-size: 12px;
+            text-align: center;
+            align-items: center;
+            flex: 1 1 auto;
+            max-width: 220px;
+            margin: 0 auto;
+            br {
+                display: none;
+            }
+        }
+    }
+}

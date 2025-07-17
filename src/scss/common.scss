@@ -1,0 +1,102 @@
+.title2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 114%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    @media (max-width: $tablet) {
+        font-size: 38px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 359px) {
+        font-size: 36px;
+    }
+    span {
+        border-radius: 21321px;
+        padding: 5px 20px;
+        background: #f83758;
+        color: #fff;
+        margin: 0px 10px 0px 0px;
+        @media (max-width: $tablet) {
+            margin: 0px 0px 5px 0px;
+            padding: 2px 10px;
+        }
+    }
+}
+
+.heading-complex {
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        gap: 5px;
+    }
+    @media (max-width: $mobile) {
+        margin: 0px 0px 16px 0px;
+    }
+    // .heading-complex__right
+
+    &__right {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 129%;
+        letter-spacing: -0.03em;
+        text-align: right;
+        @media (max-width: $tablet) {
+            font-size: 12px;
+            text-align: center;
+            color: rgba(32, 32, 32, 0.75);
+            margin: 5px 0px 0px 0px;
+        }
+    }
+
+    // .heading-complex__socials
+
+    &__socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        a {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: $mobile) {
+        gap: 15px;
+    }
+    a {
+        width: 42px;
+        height: 42px;
+        padding: 0px;
+        @media (max-width: $mobile) {
+            width: 35px;
+            height: 35px;
+        }
+        img {
+            @media (max-width: $mobile) {
+                width: 18px;
+                height: 15px;
+            }
+        }
+    }
+}
